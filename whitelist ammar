@@ -1,0 +1,18 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Notification";
+    Text = "discord server copied !";
+    Icon = "RBXID OR BLANK";
+    Duration = "DURATION IN SECONDS";
+    })
+game.StarterGui:SetCore("SendNotification", {
+    Title = "whitelist";
+    Text = "White Listed !, by LsT#1337";
+    Icon = "RBXID OR BLANK";
+    Duration = "155";
+    callbakc = bindableFunction;
+    Button1 = "Okay";
+})
+local Access = {"hamdansuhail10","Spkkrr","TRy1mox"}
+if not table.find(Access, game:GetService("Players").LocalPlayer.Name) then 
+game:GetService("Players").LocalPlayer:Kick("Access not granted")
+end
